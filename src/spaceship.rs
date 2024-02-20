@@ -21,7 +21,7 @@ pub struct SpaceshipPlugin;
 
 impl Plugin for SpaceshipPlugin {
     fn build(&self, app: &mut App) {
-        app.add_system(Startup, swpawn_spaceship);
+        app.add_systems(Startup, swpawn_spaceship);
     }
 }
 

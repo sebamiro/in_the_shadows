@@ -6,6 +6,7 @@
 
 use bevy::prelude::*;
 
+#[derive(Component, Debug)]
 pub struct Velocity {
     pub value: Vec3,
 }
@@ -14,7 +15,7 @@ pub struct MovementPlugin;
 
 impl Plugin for MovementPlugin {
     fn build(&self, app: &mut App) {
-        app.add_system(Update, update_poistion);
+        app.add_systems(Update, update_poistion);
     }
 }
 

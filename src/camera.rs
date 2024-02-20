@@ -18,7 +18,8 @@ impl Plugin for CameraPluigin {
 
 fn spawn_camera(mut commands: Commands) {
     commands.spawn(Camera3dBundle {
-        transform: Transform::from_xyz(0., CAMRA_DISTANCE, 0.).looking_at(Vec3::ZERO, Vec3:Z),
+        transform: Transform::from_xyz(0., CAMRA_DISTANCE, 0.)
+            .looking_at(Vec3::ZERO, Vec3::Z),
         ..Default::default()
     });
 }
